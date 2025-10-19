@@ -15,7 +15,7 @@ import subprocess
 import gradio as gr
 
 # Modelo por defecto (ajustar según lo que tenga instalado en Ollama)
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama2")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.2:latest")
 
 
 def generate_with_ollama(prompt: str, model: str = OLLAMA_MODEL, timeout: int = 60) -> str:
